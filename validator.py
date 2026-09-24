@@ -11,3 +11,8 @@ def validate_phone(phone: str) -> bool:
     import re
     pattern = r'\+?7[0-9]{10}'
     return bool(re.fullmatch(pattern, phone.replace('-', '').replace(' ', '')))
+
+
+def validate_inn(inn: str) -> bool:
+    """TODO: валидация ИНН."""
+    pass
