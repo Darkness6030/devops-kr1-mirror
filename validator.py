@@ -7,7 +7,7 @@ def validate_email(email: str) -> bool:
 
 
 def validate_phone(phone: str) -> bool:
-    """Валидация российского номера телфона."""
+    """Валидация российского номера телефона."""
     import re
     pattern = r'\+?7[0-9]{10}'
     return bool(re.fullmatch(pattern, phone.replace('-', '').replace(' ', '')))
